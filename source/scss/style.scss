@@ -1,0 +1,24 @@
+$bg-color: #fff;
+$text-color: #272822;
+$brand-color: #F92672;
+
+
+$bg-color-dark: #222629;
+$brand-color-dark: #87C232;
+
+
+body {
+	margin: 0;
+	background: $bg-color;
+	color: $text-color;
+}
+.brand {
+	color: $brand-color;
+}
+
+.dark-theme {
+	background: $bg-color-dark;
+	.brand {
+		color: $brand-color-dark;
+	}
+}
