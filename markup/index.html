@@ -5,15 +5,18 @@
         <meta charset = "utf-8">
         <link rel="stylesheet" href="css/style.min.css">
     </head>
-    <body class="dark-theme">
-    	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-	  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula.</div>
-	  <span class="text-blue">Lorem ipsum</span>
-	  <span>Lorem ipsum</span>
-	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula.</p>
-	  <p class="text-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula.</p>
-	  <div>
-	    <span class="brand">Text text</span>
-	  </div>
+    <body id="body">
+    	<button onclick="darkToggle()" class="btn">Try it</button>
+		<div class="box">
+	    	<p class="en">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Et malesuada fames ac turpis egestas sed. Sit amet nisl suscipit adipiscing bibendum est ultricies. Et magnis dis parturient montes nascetur.</p>
+	    	<p class="ua">Фраза “Lorem ipsum” походить із трактату Цицерона de Finibus Bonorum et Malorum (Про межі добра та зла). Перекручену фразу “Lorem ipsum …” узято з тексту “Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit …”, що переводиться як “Ніхто не любить свій біль, ніхто не шукає його й ніхто не хоче його мати. Просто тому, що це біль…”. Це макетний текст, який використовувався з 1500-х років як заповнювач контенту. Замість того, щоб писати “свій контент” знову і знову, lorem ipsum забезпечує напів-нормальний розподіл слів і літер. Він використовується багатьма редакторами веб-сторінок в якості тексту за замовчуванням для моделей сайтів.</p>
+		</div> 
+		<span class="brand">Text text</span>
+		<script>
+			function darkToggle() {
+			   var element = document.getElementById("body");
+			   element.classList.toggle("dark-theme");
+			}
+		</script>
 	</body> 
 </html>

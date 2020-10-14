@@ -1,6 +1,7 @@
 $bg-color: #fff;
 $text-color: #272822;
 $brand-color: #F92672;
+$bg-content: #F5F5F5;
 
 
 $bg-color-dark: #222629;
@@ -12,13 +13,35 @@ body {
 	background: $bg-color;
 	color: $text-color;
 }
+.btn {
+	border: 2px solid $brand-color;
+	color: $brand-color;
+	background: none;
+	outline: none;
+}
+.box {
+	background: $bg-content;
+}
 .brand {
 	color: $brand-color;
+}
+.ua {
+	display: none;
 }
 
 .dark-theme {
 	background: $bg-color-dark;
+	.btn {
+		border: 2px solid $brand-color-dark;
+		color: $brand-color-dark;
+	}
 	.brand {
 		color: $brand-color-dark;
+	}
+	.en {
+		display: none;
+	}
+	.ua {
+		display: block;
 	}
 }
